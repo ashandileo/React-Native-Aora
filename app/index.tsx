@@ -11,7 +11,7 @@ import { useGlobalContext } from "@/context/GlobalProvider";
 const RootLayout = () => {
   const { isLoading, isLoggedIn } = useGlobalContext() as any; // TODO
 
-  if (!isLoading && isLoggedIn) return <Redirect href={"/home"} />;
+  if (!isLoading && isLoggedIn) return <Redirect href="/home" />;
 
   return (
     <SafeAreaView className="bg-primary h-full">
